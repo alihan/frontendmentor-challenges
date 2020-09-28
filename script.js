@@ -21,17 +21,17 @@ const projects = [
   {
     title: 'Article Preview Component',
     url: 'https://article-preview-component-six.vercel.app/',
-    img: 'article-preview-component/design/desktop-design.JPG',
+    img: 'article-preview-component/design/desktop-design.jpg',
   },
   {
     title: 'Fylo data storage component',
     url: 'https://fylo-data-storage-component-phi-three.vercel.app/',
-    img: 'previews/fylo-component.JPG',
+    img: 'previews/fylo-component.jpg',
   },
   {
     title: 'Coding bootcamp testimonials slider',
     url: 'https://testimonials-slider-sand.vercel.app/',
-    img: 'previews/testimonials-slider.JPG',
+    img: 'previews/testimonials-slider.jpg',
   },
   {
     title: 'Four card feature section',
