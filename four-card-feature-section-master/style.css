@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --verydarkblue: hsl(234, 12%, 34%);
+  --grayishblue: hsl(229, 6%, 66%);
+  --verylightgray: hsl(0, 0%, 98%);
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+body {
+  width: 100%;
+  background-color: var(--verylightgray);
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10% 40px 10%;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 65px;
+}
+.title {
+  color: var(--verydarkblue);
+  width: 100%;
+}
+.title p {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+}
+.title b {
+  font-weight: 600;
+  font-size: 24px;
+}
+.statement {
+  color: var(--grayishblue);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  color: var(--verydarkblue);
+  width: 106%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  padding: 25px;
+  padding-top: 0;
+  height: 250px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 12px 24px rgba(76, 78, 97, 0.125);
+}
+.card b {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: -80px;
+}
+.card p {
+  color: var(--grayishblue);
+  margin-top: 4px;
+}
+.cyan {
+  border-top: 4px solid var(--cyan);
+}
+.red {
+  border-top: 4px solid var(--red);
+}
+.orange {
+  border-top: 4px solid var(--orange);
+}
+.blue {
+  border-top: 4px solid var(--blue);
+}
+svg {
+  position: absolute;
+  top: 60%;
+  right: 6%;
+}
+@media screen and (min-width: 724px) {
+  .middle {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .title p, .title b {
+    font-size: 40px;
+  }
+  .container {
+    align-items: center;
+    margin: 0 5%;
+  }
+  .header {
+    width: 45%;
+  }
+  .statement p {
+    font-size: 15px;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    width: 106%;
+    margin: 0 40px;
+  }
+}

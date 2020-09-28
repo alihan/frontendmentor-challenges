@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  --strongcyan: hsl(171, 66%, 44%);
+  --lightblue: hsl(233, 100%, 69%);
+  --darkgrayishblue: hsl(210, 10%, 33%);
+  --grayishblue: hsl(201, 11%, 66%);
+}
+* {
+  font-family: "Bai Jamjuree";
+  overflow-x: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 18px;
+  width: 100%;
+}
+
+main {
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+}
+section {
+  padding: 5rem 2rem;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container {
+  margin: 4rem 0 2rem;
+}
+section h2 {
+  font-size: 2rem;
+  color: var(--darkgrayishblue);
+  margin: 10px auto 0;
+}
+section p {
+  color: var(--grayishblue);
+  font-size: 16.2px;
+  line-height: 1.7;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+button {
+  outline: none;
+  padding: 16px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
+  color: white;
+  border-radius: 35px;
+}
+.ios {
+  background-color: var(--strongcyan);
+  box-shadow: 2px 6px 8px -4px var(--strongcyan);
+}
+.mac {
+  background-color: var(--lightblue);
+  box-shadow: 2px 6px 8px -4px var(--lightblue);
+}
+.img-container {
+  margin: 3rem 0;
+}
+.img-container img {
+  width: 100%;
+}
+.info {
+  padding: 15px 0;
+}
+.middle:nth-child(3) {
+  margin: 4rem 0;
+}
+.subinfo {
+  padding: 0 0 2rem;
+}
+.subinfo img {
+  margin-bottom: 1rem;
+}
+.third {
+  padding-bottom: 3rem;
+}
+.fourth {
+  padding: 0 2rem 3rem;
+}
+.company-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-container img {
+  margin: 2rem 0;
+}
+footer {
+  background-color: whitesmoke;
+  padding: 3.5rem 2rem 1rem;
+}
+footer,
+.links,
+.link-group {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo img {
+  width: 17%;
+}
+.links {
+  margin-top: 25px;
+}
+a {
+  color: var(--darkgrayishblue);
+  text-decoration: none;
+  padding: 10px 0;
+}
+.social-media {
+  margin: 1rem 0;
+}
+.social-media ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+.social-media ul li {
+  padding: 0 15px;
+}
+a:hover,
+svg:hover,
+button:hover {
+  cursor: pointer;
+}
+a:hover {
+  color: var(--strongcyan);
+}
+svg:hover path {
+  fill: var(--strongcyan);
+}
+button:hover {
+  opacity: 0.8;
+}
+@media screen and (min-width: 800px) {
+  main {
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: contain;
+  }
+  .first {
+    padding: 5rem 20rem;
+  }
+  .first h2 {
+    font-size: 2.5rem;
+  }
+  .first p {
+    font-size: 20.2px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  button {
+    width: 35%;
+  }
+  .ios {
+    margin-right: 20px;
+  }
+  .middle {
+    padding: 0 19rem;
+  }
+  .middle p {
+    font-size: 19.2px;
+  }
+  .second {
+    padding-left: 0;
+  }
+  .info {
+    width: 55%;
+  }
+  .info h2,
+  .info p {
+    text-align: left;
+  }
+  .img-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .img-container {
+    margin-left: -2rem;
+    margin-right: 8rem;
+  }
+  .middle + .img-container {
+    margin-right: 0;
+  }
+  .img-text + .text-container {
+    margin-right: -3rem;
+  }
+  .third {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle + .img-container img {
+    width: 70%;
+  }
+  .middle h2 {
+    font-size: 2.5rem;
+  }
+  .middle + .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-right: 0;
+  }
+  .subinfo {
+    width: 33%;
+    margin: 0 1rem;
+  }
+  .subinfo h2 {
+    font-size: 1.5rem;
+  }
+  .subinfo:first-child h2 {
+    margin-top: 20px;
+  }
+  .subinfo img {
+    height: 100%;
+  }
+  .company-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .fifth {
+    padding: 2rem 19rem 9rem;
+  }
+  .fifth h2 {
+    font-size: 2rem;
+  }
+  .fifth p {
+    font-size: 19.2px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+  footer {
+    flex-direction: row;
+    padding-bottom: 2.5rem;
+    justify-content: space-around;
+  }
+  .footer-logo img {
+    width: 55%;
+  }
+  .links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .link-group {
+    align-items: flex-start;
+    padding: 0 50px;
+  }
+}

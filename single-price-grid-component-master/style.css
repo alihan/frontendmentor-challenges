@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --brightyellow: hsl(71, 73%, 54%);
+  --lightgray: hsl(204, 43%, 93%);
+  --grayishblue: hsl(218, 22%, 67%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--lightgray);
+}
+.container {
+  box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+  margin: 30px 0;
+  width: 90%;
+  border-radius: 15px;
+}
+.first-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 30px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.first-card h2 {
+  color: var(--cyan);
+  margin-bottom: 25px;
+}
+.first-card h3 {
+  color: var(--brightyellow);
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+.first-card p {
+  color: var(--grayishblue);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.first {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: var(--cyan);
+}
+.first h2 {
+  color: white;
+  font-size: 21px;
+}
+.first span {
+  color: white;
+  font-size: 40px;
+}
+.first p {
+  margin-top: 2px;
+  color: var(--lightgray);
+  font-size: 19px;
+}
+.price {
+  display: inline-flex;
+}
+.price p {
+  margin: 13px 20px;
+  font-size: 19px;
+  opacity: 0.6;
+  color: var(--lightgray);
+}
+button {
+  width: 100%;
+  font-size: 19px;
+  padding: 16px;
+  color: white;
+  background-color: var(--brightyellow);
+  border: none;
+  border-radius: 6px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 15px 20px 10px rgba(37, 43, 70, 0.1);
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.second {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: var(--cyan);
+  opacity: 0.8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.second h2 {
+  color: white;
+  font-size: 22px;
+}
+.second ul {
+  list-style: none;
+  padding-left: 0;
+}
+.second ul li {
+  padding-bottom: 5px;
+  color: var(--lightgray);
+  opacity: 0.7;
+}
+.second ul li:first-child {
+  margin-top: 20px;
+}
+.second ul li:last-child {
+  margin-bottom: 2px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+  .first-card {
+    padding: 40px;
+  }
+  .first-card p {
+    font-size: 20px;
+  }
+  .first {
+    padding: 35px;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+  }
+  .second {
+    padding: 35px;
+    width: 50%;
+    border-bottom-left-radius: 0;
+  }
+  .second-card {
+    display: flex;
+  }
+  .first p {
+    font-size: 20px;
+  }
+  button {
+    width: 94%;
+  }
+}

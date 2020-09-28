@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --headerfont: "Poppins", sans-serif;
+  --bodyfont: "Open Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--bodyfont);
+  font-size: 18px;
+  color: white;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  background: url("./images/bg-mobile.svg");
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+}
+
+header {
+  padding: 30px;
+}
+header img {
+  width: 43%;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 23px 36px;
+}
+section img {
+  width: 100%;
+}
+.text {
+  margin-top: 35px;
+  text-align: center;
+}
+.text h2 {
+  font-size: 1.6rem;
+}
+.text p {
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+button {
+  color: var(--violet);
+  background: white;
+  padding: 12px 85px;
+  font-size: 14px;
+  border-radius: 33px;
+  outline: none;
+  border: none;
+  font-family: var(--bodyfont);
+  box-shadow: 3px 5px 8px 2px rgba(0, 0, 0, 0.25);
+}
+ul {
+  margin-top: 20%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid white;
+  align-items: center;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  justify-content: center;
+}
+li img {
+  width: 15px;
+}
+li:hover,
+button:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: contain;
+  }
+  header {
+    padding: 3rem;
+  }
+  header img {
+    width: 15%;
+  }
+  section {
+    flex-direction: row;
+    margin: 24px 3rem;
+  }
+  section img {
+    width: 93%;
+  }
+  .dashboard {
+    width: 56%;
+  }
+  .text {
+    margin-top: -7px;
+    width: 40%;
+    text-align: left;
+  }
+  .text h2 {
+    font-size: 2.5rem;
+  }
+  .text p {
+    font-size: 17.5px;
+  }
+  button {
+    font-size: 20px;
+    padding: 15px 75px;
+  }
+  footer {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+  }
+  li {
+    width: 50px;
+    height: 45px;
+    margin: 0 7px;
+  }
+  li img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+:root {
+  --red: hsl(0, 100%, 68%);
+  --verydarkblue: hsl(230, 29%, 20%);
+  --darkgrayishblue: hsl(230, 11%, 40%);
+  --grayishblue: hsl(231, 7%, 65%);
+  --lightgrayishblue: hsl(207, 33%, 95%);
+  --headerfont: "Barlow Condensed", sans-serif;
+  --bodyfont: "Barlow", sans-serif;
+}
+* {
+  font-size: 18px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--bodyfont);
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  width: 10%;
+}
+
+.links a {
+  color: var(--verydarkblue);
+  font-size: 1rem;
+  letter-spacing: 0.9px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--headerfont);
+  font-weight: 700;
+}
+
+.links li {
+  padding: 15px 0 10px;
+}
+.links li::-webkit-scrollbar {
+  display: none;
+}
+
+.links li:first-child {
+  margin-top: 15px;
+}
+.links li:last-child {
+  margin-top: 15px;
+  width: 80%;
+  border-top: 1px solid var(--grayishblue);
+  text-align: center;
+}
+
+.links li:last-child a {
+  color: var(--grayishblue);
+}
+
+.links button {
+  font-size: 1rem;
+  padding: 16px 80px;
+}
+
+.links button:hover {
+  background-color: gray;
+  color: lightblue;
+  cursor: pointer;
+}
+
+.links {
+  position: absolute;
+  height: 0;
+  top: 10%;
+  overflow: hidden;
+  width: 18rem;
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content: flex-start;
+  left: 6%;
+}
+
+.show-links {
+  padding-left: 0;
+  height: 13.5rem;
+  margin-top: 0;
+  border-radius: 6px;
+  box-shadow: 0px 17px 37px 8px rgba(0, 0, 0, 0.11);
+}
+
+.nav {
+  background-image: url("./images/icon-hamburger.svg");
+  height: 23px;
+  width: 31px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav.open {
+  background-image: url("./images/icon-close.svg");
+}
+
+.menu-btn {
+  position: relative;
+  right: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.container {
+  padding: 2.5rem 0 0;
+}
+
+.gray-area {
+  width: 11rem;
+  height: 24rem;
+  background-color: var(--lightgrayishblue);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 65px;
+}
+
+.illustration-container img {
+  width: 138%;
+}
+
+.text-container {
+  padding: 4rem 1.5rem;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+}
+
+.titles h3,
+.button-container p {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: var(--headerfont);
+  color: var(--grayishblue);
+}
+
+.titles h3:first-child {
+  color: white;
+  margin-right: 17px;
+  font-weight: 700;
+  background-color: var(--verydarkblue);
+  padding: 3px 11px;
+  border-radius: 21px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 2.3rem;
+  font-family: var(--headerfont);
+  color: var(--verydarkblue);
+  text-transform: uppercase;
+  margin: 0 auto;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.text-container p {
+  font-size: 20px;
+  color: var(--verydarkgrayishblue);
+  margin-top: 15px;
+  line-height: 1.3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+button {
+  font-family: var(--headerfont);
+  text-transform: uppercase;
+  padding: 9px 19px;
+  background-color: var(--red);
+  border: none;
+  color: white;
+  letter-spacing: 1.2px;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.1);
+}
+
+.button-container p {
+  font-size: 18px;
+  color: var(--grayishblue);
+  letter-spacing: 1.9px;
+  margin-left: 11px;
+}
+button,
+a {
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+  backface-visibility: hidden;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    padding: 2rem;
+  }
+
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 4rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-header img {
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .links {
+    background: transparent;
+    width: 50%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    list-style-type: disc;
+    margin-top: 0;
+  }
+  .links a {
+    margin: 0 2rem;
+  }
+
+  .links li:first-child {
+    margin-top: 0;
+  }
+  .links li:last-child {
+    width: auto;
+    margin-top: 0;
+    border: none;
+  }
+  .links li:last-child::before {
+    content: "\2022";
+    color: var(--grayishblue);
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: 0;
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 1rem;
+    font-size: 19px;
+    letter-spacing: 1.4px;
+    color: var(--darkgrayishviolet);
+    font-weight: 700;
+  }
+
+  .links a:hover {
+    color: var(--verydarkviolet);
+    cursor: pointer;
+  }
+  header {
+    padding: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 3rem;
+    padding-right: 0;
+    width: 100%;
+  }
+  .gray-area {
+    width: 37rem;
+    height: 26rem;
+  }
+  .text-container {
+    width: 50%;
+    padding-top: 0;
+    padding-left: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-container h1 {
+    font-size: 3rem;
+  }
+  .text-container h1 + p {
+    margin-top: 1rem;
+    padding-right: 12rem;
+    font-size: 18px;
+    color: var(--grayishblue);
+  }
+  .illustration-container {
+    width: 50%;
+  }
+  .button-container {
+    margin-top: 2rem;
+  }
+  .button-container p {
+    letter-spacing: 2.9px;
+    margin-left: 18px;
+  }
+  button {
+    padding: 15px 41px;
+  }
+}

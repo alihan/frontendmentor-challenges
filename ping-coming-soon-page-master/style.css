@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --paleblue: hsl(223, 100%, 88%);
+  --lightred: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --verydarkblue: hsl(209, 33%, 12%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  font-size: 20px;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+.logo {
+  padding: 20px 0;
+}
+.text-container h2 {
+  font-size: 27px;
+  font-weight: 300;
+  color: var(--gray);
+}
+.text-container h2 + p {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+strong {
+  color: black;
+}
+input {
+  outline: none;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 1px solid var(--paleblue);
+}
+form.erroractive input {
+  border: 1px solid var(--lightred);
+}
+form.erroractive .error {
+  display: inline-block;
+}
+form.erroractive ::placeholder {
+  color: black;
+}
+::placeholder {
+  color: var(--gray);
+}
+.error {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--lightred);
+  margin-top: 8px;
+  margin-bottom: 10px;
+  display: none;
+}
+button {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background: var(--blue);
+  color: white;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+button:hover {
+  opacity: 0.8;
+}
+.dashboard {
+  margin: 60px 0;
+}
+.dashboard img {
+  width: 100%;
+}
+footer {
+  margin-top: 20px;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+li {
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid;
+  border-color: var(--paleblue);
+  align-items: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+}
+.social-media svg {
+  width: 24px;
+  height: 24px;
+}
+.social-media li:hover {
+  background: var(--blue);
+  stroke: white;
+}
+svg:hover path {
+  fill: white;
+}
+
+footer p {
+  font-size: 12px;
+  color: gray;
+}
+@media only screen and (min-width: 1000px) {
+  .text-container {
+    margin-bottom: 30px;
+  }
+  .text-container h2 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+  }
+  .error {
+    position: absolute;
+    top: 50px;
+    left: 28px;
+  }
+  form {
+    display: flex;
+    position: relative;
+    width: 135%;
+    right: 70px;
+  }
+  input {
+    width: 130%;
+    height: 50px;
+  }
+  button {
+    width: 55%;
+    margin: 0 10px;
+    height: 50px;
+  }
+  .dashboard img {
+    width: 60%;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
