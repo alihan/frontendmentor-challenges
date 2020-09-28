@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap");
+:root {
+  --darkgrayishred: hsl(0, 6%, 24%);
+  --desaturatedred: hsl(0, 36%, 70%);
+  --softred: hsl(0, 93%, 68%);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.logo {
+  margin: 30px 30px;
+}
+.picture {
+  width: 100%;
+}
+.picture img {
+  width: 100%;
+  height: 275px;
+}
+.text-container {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.first-title {
+  color: var(--desaturatedred);
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.second-title {
+  text-transform: uppercase;
+  color: var(--darkgrayishred);
+  font-size: 40px;
+  margin-top: -35px;
+  letter-spacing: 7px;
+}
+.description {
+  margin-top: -15px;
+  color: var(--desaturatedred);
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+form {
+  position: relative;
+  margin-left: 30px;
+  width: 90%;
+}
+.email {
+  background: transparent;
+  border-radius: 50px;
+  height: 50px;
+  width: 88%;
+  border: 1px solid var(--desaturatedred);
+  padding: 25px;
+  outline: none;
+}
+::placeholder {
+  color: var(--desaturatedred);
+}
+button {
+  cursor: pointer;
+  margin-bottom: 40px;
+  position: absolute;
+  right: 12%;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 40px;
+  outline: none;
+  box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+button:hover {
+  opacity: 0.5;
+  box-shadow: 0px 4px 15px hsla(0, 36%, 70%, 1);
+}
+.error-icon {
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+}
+.small {
+  visibility: hidden;
+  display: block;
+  color: var(--softred);
+  margin-top: 12px;
+  margin-left: 25px;
+}
+.small.error {
+  visibility: visible;
+}
+.error-icon.error {
+  visibility: visible;
+}
+.email.error {
+  border: 2px solid var(--softred);
+}
+.right-container {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: linear-gradient(
+      linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
+    );
+  }
+  .container {
+    flex-direction: row;
+  }
+  .picture {
+    display: none;
+  }
+  .left-container {
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 50px 50px;
+    padding-left: 140px;
+  }
+  .right-container {
+    display: flex;
+  }
+  .text-container {
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 180px;
+  }
+  .first-title,
+  .second-title {
+    letter-spacing: 15px;
+    font-size: 50px;
+  }
+  .description {
+    font-size: 17px;
+    margin-bottom: 46px;
+  }
+  .form {
+    width: 65%;
+  }
+  .error-icon {
+    right: 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+  .picture img {
+    width: 40%;
+  }
+}
