@@ -96,7 +96,7 @@ p {
 }
 
 .container-block:hover > a {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .description {
@@ -115,9 +115,7 @@ p {
 }
 
 .container-block:hover .description {
-  background: var(--verylightgray);
-  color: var(--verydarkblue);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .panel {
