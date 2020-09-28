@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Article Preview Component',
     url: 'https://article-preview-component-six.vercel.app/',
-    img: 'previews/preview-component.JPG',
+    img: 'article-preview-component/design/desktop-design.JPG',
   },
   {
     title: 'Fylo data storage component',
