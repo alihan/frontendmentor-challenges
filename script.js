@@ -69,7 +69,7 @@ const projects = [
     img: 'previews/huddle-single.jpg',
   },
   {
-    title: 'Fylo landing page with two column layout',
+    title: 'Fylo page with two column layout',
     url: 'https://fylo-landing-page-pi-sooty.vercel.app/',
     img: 'previews/fylo-two-columns.jpg',
   },
